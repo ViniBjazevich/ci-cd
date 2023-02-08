@@ -1,4 +1,4 @@
-name: ES Lint
+name: CI/CD
 on:
   push:
     branches:
@@ -16,8 +16,9 @@ jobs:
           node-version: 16
       - name: Install modules
         run: npm install
-      - name: Run Coverage
+      - name: Coverage
         run: npm run coverage
-      - name: Run Lint
+      - name: Lint
         run: npm run lint
-
+      - name: Deployment
+        run: npm run deploy
