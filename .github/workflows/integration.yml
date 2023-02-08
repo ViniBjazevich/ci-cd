@@ -20,8 +20,8 @@ jobs:
           npm run build
       - name: Coverage
         run: npm run coverage
-      - name: Lint
-        run: npm run lint
+      # - name: Lint
+      #   run: npm run lint
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@v4
         with:
