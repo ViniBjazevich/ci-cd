@@ -14,19 +14,15 @@ jobs:
       - uses: actions/setup-node@v1
         with:
           node-version: 16
-
-    - name: Install and Build 🔧
-      run: |
-        npm install
-        npm run build
-
-    - name: Coverage
-      run: npm run coverage
-
-    - name: Lint
-      run: npm run lint
-
-    - name: Deploy 🚀
-        uses: JamesIves/github-pages-deploy-action@v4
-        with:
-          folder: build
+      - name: Install and Build 🔧
+        run: |
+          npm install
+          npm run build
+      - name: Coverage
+        run: npm run coverage
+      - name: Lint
+        run: npm run lint
+      - name: Deploy 🚀
+          uses: JamesIves/github-pages-deploy-action@v4
+          with:
+            folder: build
