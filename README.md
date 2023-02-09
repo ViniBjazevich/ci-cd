@@ -1,4 +1,5 @@
 # CI/CD
+Continuous Integration and Continuous Delievery/Deplloyment is when you automate tools that help you integrate new code. A common use case for Continuous Integration is to make sure that your app builds, all of your tests were passing, and you don't have any lint issues. Continuous Integration can automatically build our app, run tests, and do a lint check to make sure our code is ready to be integrated. We can also prevent our code from being merged if we fail one of these checks. Continuous deployment allows us to automatically deploy our app when new code is merged to our main branch. This allows us to always have the latest changes deployed without manually deploying everytime we push changes.
 
 ## Github Pages Continuous Delivery:
 
