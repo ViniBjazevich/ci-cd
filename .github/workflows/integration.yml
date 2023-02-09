@@ -12,7 +12,7 @@ jobs:
         with:
           node-version: 16
       - name: Install 🔧
-        run: npm install
+        run: npm install && npm run build
       - name: Coverage 🧪
         run: npm run coverage
       - name: Lint 🧹
