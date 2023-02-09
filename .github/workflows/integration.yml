@@ -1,8 +1,5 @@
-name: CI/CD
+name: Coverage and Linting
 on:
-  push:
-    branches:
-      - master
   pull_request:
     branches:
       - master
@@ -14,13 +11,9 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: 16
-      - name: Install and Build 🔧
-        run: npm install && npm run build
+      - name: Install 🔧
+        run: npm install
       - name: Coverage 🧪
         run: npm run coverage
       - name: Lint 🧹
         run: npm run lint
-      - name: Deploy 🚀
-        uses: JamesIves/github-pages-deploy-action@v4
-        with:
-          folder: build
